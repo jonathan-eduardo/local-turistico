@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-default: ##f5f4f0;
+  --border-primary: #d9d9d9;
+  --text-primary: #1b1b1b;
+  --text-secondary: #333333;
+  --text-headline: #e1624f;
+  --accent-blue: #0c51a7;
+  --accent-orange: #e95e10;
+  --accent-pink: #e5245e;
+  --accent-purple: #591b98;
+  --default-font-size: 16px;
+
+  font-family: "Open Sans", serif;
+}
+
+body {
+  font-size: var(--default-font-size);
+  line-height: 1.375rem;
+  color: var(--text-primary);
+  background: var(--background-default);
+}
+
+.container {
+  max-width: 1168px;
+  margin: 88px auto 64px;
+  padding: 0 24px;
+}
+
+.hero {
+  border-bottom: 1px solid var(--border-primary);
+  margin-bottom: 64px;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-headline);
+  margin-bottom: 2px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 3rem;
+  color: var(--text-primary);
+  margin: 6px 0 40px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 24px 0 40px;
+  text-align: center;
+}
+
+.heading-image,
+.location-image {
+  width: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+.heading-image {
+  height: auto;
+}
+
+.secondary-title {
+  font-size: 32px;
+  line-height: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.tertiary-title {
+  margin: 20px 0 4px;
+}
+
+.paragraph {
+  color: var(--text-secondary);
+}
+
+.locations {
+  margin-top: 64px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.location-image {
+  max-height: 350px;
+}
+
+.extra-info {
+  margin-top: 16px;
+  font-weight: 700;
+}
+
+.recommended-item {
+  list-style-position: inside;
+}
+
+.recommended-item::marker {
+  color: var(--text-secondary);
+}
+
+.history {
+  color: var(--accent-blue);
+}
+
+.couples {
+  color: var(--accent-purple);
+}
+
+.families {
+  color: var(--accent-pink);
+}
+
+.budget {
+  color: var(--accent-orange);
+}
+
+.location-info + .location-info {
+  margin-top: 48px;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 52px;
+}
+
+.footer img {
+  vertical-align: middle;
+}
